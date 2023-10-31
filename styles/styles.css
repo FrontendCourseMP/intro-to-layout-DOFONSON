@@ -34,7 +34,7 @@ ul {
 
 @font-face {
     font-family: "steelfish";
-    src: url("/fonts/SteelfishBk-Regular.woff2") format("woff2"),
+    src: url("/intro-to-layout-DOFONSON/fonts/SteelfishBk-Regular.woff2") format("woff2"),
     url("/fonts/SteelfishBk-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -51,7 +51,7 @@ ul {
 
 @font-face {
         font-family: "inter";
-        src: url("/fonts/Inter-Medium.woff") format("woff"),
+        src: url("/fonts/Inter-Regular.woff") format("woff"),
         url('/fonts/Inter-Bold.woff') format('woff');
         font-weight: normal;
         font-style: normal;
@@ -153,6 +153,10 @@ body{
 }
 
 
+.section_2{
+    background: url('/img/Vector\ 1.svg') 0 0 no-repeat;
+}
+
 .section_2 h2{
     font-size: 10rem;
     font-style: normal;
@@ -241,7 +245,7 @@ body{
 
 .section_3{
     margin-top: 85px;
-    margin-bottom: 85px;
+    margin-bottom: 57px;
 }
 
 .section_3 h2{
@@ -268,6 +272,12 @@ body{
     min-width: 261px;
     margin-right: 10px;
     z-index: 9; 
+}
+
+.section_4{
+    padding-top: 28px;
+    background: url('/img/Vector\ 9.svg') 0 0 no-repeat;
+    padding-bottom: 47px;
 }
 
 .section_4 h2{
@@ -321,7 +331,41 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.last-list  .section_4__form__last-list{
+.form__list li input[type=radio]{
+    display: none;
+}
+
+.form__list li label{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    position: relative;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.form__list li label:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -4px;
+    left: -34px;
+    background: url('/img/radio-btns.svg') 0 0 no-repeat;
+}
+
+.form__list li input[type=radio]:checked + label:before{
+    background: url('/img/radio-btns-ch.svg') 0 0 no-repeat;
+}
+
+.form__list li{
+    margin-left: 34px
+}
+
+.form form .last-list fieldset{
     border: none;
 }
 
@@ -372,7 +416,8 @@ body{
 
 
 .section_5{
-    margin-top: 85px;
+    padding-top: 38px;
+    background: url('/img/Vector\ 10.svg') 0 0 no-repeat;
 }
 
 .section_5 summary {
@@ -438,11 +483,19 @@ body{
 }
 
 .section_6{
+    background: url('/img/Vector21.png') 0 0 no-repeat;
     padding-bottom: 90px;
+}
+
+.second-main-part{
+    background-color: var(--peach);
 }
 
 .section_7 {
     padding-top: 85px;
+    padding-bottom: 85px;
+    background: url('/img/Vector\ 13.svg') no-repeat;
+    background-position: 18px 49px;
     background-color: var(--peach);
     color: var(--dark);
     font-style: normal;
@@ -506,6 +559,7 @@ body{
 }
 
 .section_8{
+    background: url('/img/Vector\ 14.svg') 0 0 no-repeat;
     background-color: var(--peach);
 }
 
@@ -515,7 +569,6 @@ body{
     font-weight: 700;
     line-height: 110%; /* 44px */
     text-transform: uppercase;
-    padding-top: 85px;
     margin-bottom: 30px;
 }
 
@@ -532,7 +585,8 @@ body{
 }
 
 .section_9 {
-    background-color: var(--peach);
+    background: url('/img/Vector\ 15.svg') 0 0 no-repeat;
+    padding-bottom: 47px;
 }
 
 .section_9-top{
@@ -624,8 +678,8 @@ body{
 
 
 .section_10 {
-    padding-top: 85px;
-    background-color: var(--peach);
+    padding-top: 38px;
+    background: url('/img/Vector\ 16.svg') 0 0 no-repeat;
     padding-bottom: 90px;
 }
 
@@ -671,4 +725,71 @@ body{
 .contact-list__item a{
     color: var(--dark);
     text-decoration: none;
+}
+
+footer{
+    padding-top: 87px;
+    padding-bottom: 90px;
+}
+
+.footer-links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.links__link{
+    text-decoration: none;
+    color: var(--white);
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+}
+
+.links__link{
+    text-decoration: none;
+    color: var(--white);
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    min-width: 95px;
+}
+
+.links__item{
+    display: flex;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+
+.politics{
+    padding-top: 25px;
+    color: rgba(255, 255, 255, 0.40);
+    font-variant-numeric: lining-nums proportional-nums;
+    /* phone/main */
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+}
+
+.politics p {
+    margin-bottom: 15px;
+}
+.politics a {
+    text-decoration: none;
+    color: var(--peach);
 }
