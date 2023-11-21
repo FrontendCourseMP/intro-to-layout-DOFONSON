@@ -1,0 +1,111 @@
+:root {
+    --second-main: #F49C89;
+    --main-text: #ECEEF8;
+    --main: #34344E;
+    --sub-text: #FFF;
+    --line-color: rgba(52, 52, 78, 0.50);
+  }
+
+
+.main-form__fieldset{
+    font-family: Inter, sans-serif;
+    background-color: #FFF;
+    padding: 30px;
+}
+.main-form{
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+.form__name{
+    font-family: Inter, sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
+.fieldset-personal{
+    margin-bottom: 50px;
+}
+
+.list__string{
+    font-size: 1.3rem;
+    color: var(--main);
+    margin-bottom: 30px;
+}
+
+.main-form__legend{
+    font-size: 2rem;
+}
+
+.main-form__input{
+    border: none; outline: none; box-shadow: none;
+    border-bottom: 2px solid var(--main);
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.main-form__input:focus {
+    background-color: rgba(52, 52, 78, 0.10);
+  }
+
+  .fieldset-contact{
+    margin-bottom: 60px;
+  }
+
+  .list__string--radio{
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .list__string--radio p {
+    margin-bottom: 30px;
+  }
+
+
+.list__string--radio input[type=radio]{
+    display: none;
+}
+
+.list__string--radio label{
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    position: relative;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+.list__string--radio label:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -4px;
+    left: -34px;
+    background: url('img/radio-btns.svg') 0 0 no-repeat;
+}
+
+.list__string--radio input[type=radio]:checked + label:before{
+    background: url('img/radio-btns-ch.svg') 0 0 no-repeat;
+}
+
+
+
+
+
+.main-form__button{
+    border: none; outline: none; box-shadow: none;
+    background-color: inherit;
+    color:var(--main-text);
+    background-color: var(--second-main);
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+}
+
+.main-form__button--reset{
+    margin-left: 50px;
+}

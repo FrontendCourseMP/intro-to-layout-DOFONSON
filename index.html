@@ -8,32 +8,46 @@
     <title>TOCHKA</title>
 </head>
 <body>
-    <header class="header_1">
-        <a href="#"><img src="img/logo.svg" alt="logo__logo"></a>
-        <a href="#" class="header_1__phone_link"> <img src="img/icon 01.svg" alt="logo__phone"> <span class="header_1__phone_span">+7 909 151-08-70</span></a>
-        <nav>
-            <button class="header_1__burger"><img src="img/burger.svg" alt="бургер меню"></button>
-            <nav></nav>
-        </nav>
+    <header class="main-header">
+        <div class="wrapper">
+            <a href="#"><img src="img/logo.svg" alt="logo__logo"></a>
+            <a href="#" class="main-header__link link__adr"><img src="img/icon 04.svg" alt="adress_icon"><span class="main-header__link_span">8 минут от м. Тульская</span></a>
+            <a href="#" class="main-header__link"> <img src="img/icon 01.svg" alt="logo__phone"> <span class="main-header__link_span">+7 909 151-08-70</span></a>
+            <a href="/intro-to-layout-DOFONSON/form.html" target="_blank" class="main-header__link main-header__link--laba main-header__burger">Ссылка на лабу №8</a>
+            <nav>
+                <button class="main-header__burger"><img src="img/burger.svg" alt="бургер меню"></button>
+                <nav>
+                    <ul class="main-header__list">
+                        <li><a href="#" class="main-header__link">студии</a></li>
+                        <li><a href="#" class="main-header__link">тест-драйв</a></li>
+                        <li><a href="#" class="main-header__link">кейсы</a></li>
+                        <li><a href="#" class="main-header__link">контакты</a></li>
+                        <li><a href="../intro-to-layout-DOFONSON/form.html" target="_blank" class="main-header__link main-header__link--laba">Ссылка на лабу №8</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <h1 class="hidden_h1">
             Главная страница компании TOCHKA
         </h1>
         <section class="section_1">
-            <div class="wrapper__1">
-                <p class="section_1__main-p">студия для онлайн-трансляций, <img class="sect_1-img" src="img/Rectangle 75.jpg" alt="студия звукозаписи"></p>
-                <p class="section_1__main-p"> <span><img class="sect_1-img" src="img/Rectangle 76.jpg" alt="диктор за работой"> видеосъёмки</span> <br>
+            <div class="wrapper">
+                <p class="section_1__main-p">студия для онлайн-трансляций, <img class="sect_1-img_1" src="img/Rectangle 75.jpg" alt="студия звукозаписи">
+                <span class="main-header__image-span"><img class="sect_1-img_2" src="img/Rectangle 76.jpg" alt="диктор за работой"> видеосъёмки</span>
                     <span> и записи подкастов</span></p>
-                <p class="section_1__sub-p">Съемочное пространство, оборудование и обслуживание от 3 900 ₽/час</p>
-                <div class="section_1__block">
-                    <a href="#" class="section_1__button">Получить бесплатный тест-драйв</a>
+                <div class="section__bottom">
+                    <div class="section_1__block">
+                        <a href="#" class="section_1__button">Получить бесплатный тест-драйв</a>
+                    </div>
+                    <p class="section_1__sub-p">Съемочное пространство, оборудование <br> и обслуживание от 3 900 ₽/час</p>
                 </div>
             </div>
         </section>
         <section class="section_2">
-            <div class="wrapper__2">
-                <h2><span class="section_2__span-1">в нашей студии есть</span> <br> <span class="section_2__span-2"> несколько зон</span> <br> <span class="section_2__span-3">с разным интерьером</span></h2>
+            <div class="wrapper">
+                <h2><span class="section_2__span-1">в нашей студии есть</span> <span class="section_2__span-2"> несколько зон</span> <br> <span class="section_2__span-3">с разным интерьером</span></h2>
                 <ul class="section_2__list">
                     <li class="list__item">
                         <img src="img/img_zone 01.jpg" alt="девушка в студии звукозаписи">
@@ -90,7 +104,7 @@
             </div>
         </section>
         <section class="section_3">
-            <div class="wrapper__3">
+            <div class="wrapper">
                 <h2> <span class="section_3__span-1"> Продумали всё до мелочей, </span><br> <span class="section_3__span-2">чтобы освободить</span> <br> <span class="section_3__span-3">вашу голову от забот</span></h2>
                 <ul class="section_3__list">
                     <li class="list__item">
@@ -108,14 +122,14 @@
                         </div>
                     </li>
                     <li class="list__item">
-                        <img src="#" alt="Гримерка">
+                        <img src="img/img_makeup.jpg" alt="Гримерка">
                         <div class="list__item__main">
                             <h3>Зона грима</h3>
                             <p>Отдельное помещение с грим-постом, вешалкой и отпаривателем</p>
                         </div>
                     </li>
                     <li class="list__item">
-                        <img src="#" alt="Парковка">
+                        <img src="img/img_cars.jpg" alt="Парковка">
                         <div class="list__item__main">
                             <h3>Парковочные места</h3>
                             <p>2 парковочных места для наших гостей прямо под окнами в тихом, закрытом дворе</p>
@@ -125,14 +139,16 @@
             </div>
         </section>
         <section class="section_4">
-            <div class="wrapper__4">
+            <div class="wrapper">
                 <h2>Узнайте предварительную стоимость</h2>
                 <p class="section_4__main-p">Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. 
                     Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
                 <div class="form">
-                    <img src="img/img_price.jpg" alt="Девушка пьёт из кружки за компьютером">
-                    <form method="post">
-                        <fieldset>
+                    <div class="form__image">
+                        <img src="img/img_price.jpg" alt="Девушка пьёт из кружки за компьютером" class="form__main-image">
+                    </div>
+                    <form method="post" class="main-form">
+                        <fieldset class="main-form__fieldset">
                             <legend>
                                 Выберите студию
                             </legend>
@@ -155,7 +171,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="main-form__fieldset">
                             <legend>
                                 Продолжителльность
                             </legend>
@@ -178,7 +194,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="main-form__fieldset">
                             <legend>
                                 кол-во камер
                             </legend>
@@ -201,7 +217,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="main-form__fieldset">
                             <legend>
                                 кол-во героев в кадре
                             </legend>
@@ -225,7 +241,7 @@
                             </ul>
                         </fieldset>
                         <div class="last-list">
-                            <fieldset class="section_4__form__last-list, form__list">
+                            <fieldset class="section_4__form__last-list main-form__fieldset form__list">
                                 <legend>Тип услуги</legend>
                                 <ul>
                                     <li>
@@ -249,7 +265,7 @@
             </div>
         </section>
         <section class="section_5">
-            <div class="wrapper__5">
+            <div class="wrapper">
                 <h2>Установлено новое съёмочное оборудование и осветительные приборы</h2>
                 <p class="section_5-p-start">Нажмите на интересующее оборудование</p>
                 <ul>
@@ -287,14 +303,14 @@
             </div>
         </section>
         <section class="section_6">
-            <div class="wrapper__6">
-                <h2>Удобное пространство <br> <span>в котором есть всё</span> <br> необходимое</h2>
+            <div class="wrapper">
+                <h2>Удобное пространство <br> <span>в котором есть всё</span> необходимое</h2>
                 <img src="img/scheme.png" alt="схема помещения" width="100%">
             </div>
         </section>
         <div class="second-main-part">
             <section class="section_7">
-                <div class="wrapper__7">
+                <div class="wrapper">
                     <h2>Получите бесплатный <br> <span>тест-драйв студии</span></h2>
                     <p>Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:</p>
                     <ul>
@@ -302,12 +318,14 @@
                         <li><img src="img/—.svg" alt="черточка"> <p>Научиться пользоваться основным оборудованием</p></li>
                         <li><img src="img/—.svg" alt="черточка"> <p>Получить рекомендации от специалистов по работе в кадре</p></li>
                     </ul>
-                    <a>Получить тест-драйв</a>
-                    <img src="img/Rectangle 7.jpg" alt="Женщина за микрофоном">
+                    <div class="section_7__link-block">
+                        <a>Получить тест-драйв</a>
+                    </div>
+                    <img src="img/Rectangle 7.jpg" alt="Женщина за микрофоном" class="section_7-main-image">
                 </div>
             </section>
             <section class="section_8">
-                <div class="wrapper__8">
+                <div class="wrapper">
                     <h2>Снято в нашей студии</h2>
                     <ul>
                         <li>
@@ -323,7 +341,7 @@
                 </div>
             </section>
             <section class="section_9">
-                <div class="wrapper__9">
+                <div class="wrapper">
                     <div class="section_9-top">
                         <h2>Возьмём всю организацию <span>и технические заботы на себя</span></h2>
                         <p>В стоимость включена работа администратора, который поможет все подключить, 
@@ -352,9 +370,9 @@
                 </div>
             </section>
             <section class="section_10">
-                <div class="wrapper__10">
+                <div class="wrapper">
                     <h2>Свяжитесь с нами <br> <span>по любому вопросу</span></h2>
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab79f827c07b2c673a6399074b131b90aaf0cc9843f35012f62547015fdefe2f6&amp;width=320&amp;height=354&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab79f827c07b2c673a6399074b131b90aaf0cc9843f35012f62547015fdefe2f6&amp;width=100%&amp;height=354&amp;lang=ru_RU&amp;scroll=true"></script>
                     <ul class="contact-list">
                         <li class="contact-list__item"><img src="img/icon 02.svg" alt="иконка почты"> hello@tochkakontenta.ru</li>
                         <li class="contact-list__item"><img src="img/phone.svg" alt="телефон"> +7 909 151-08-70</li>
@@ -369,16 +387,17 @@
         </div>
     </main>
     <footer>
-        <div class="wrapper__11">
+        <div class="wrapper">
             <div class="footer-links">
                 <img src="img/logo.svg" alt="логотип" class="logo">
                 <ul class="links">
-                    <li class="links__item"><a href="#" class="links__link">студии</a>  <a href="#" class="links__link">кейсы</a></li>
-                    <li class="links__item"><a href="#" class="links__link">Тест-драйв</a>  <a href="#" class="links__link">Контакты</a></li>
-                    <li class="links__item"><a href="#" class=""><img src="img/telegram(1).svg" alt="иконка telegram"></a> <a href="#" class=""><img src="img/socials(3).svg" alt="иконка whatsapp" ></a>
+                    <li class="footer-links__item"><a href="#" class="footer-links__link">студии</a>  <a href="#" class="footer-links__link">кейсы</a></li>
+                    <li class="footer-links__item"><a href="#" class="footer-links__link">Тест-драйв</a>  <a href="#" class="footer-links__link">Контакты</a></li>
+                    <li class="footer-links__item"><a href="#" class=""><img src="img/telegram(1).svg" alt="иконка telegram"></a> <a href="#" class=""><img src="img/socials(3).svg" alt="иконка whatsapp" ></a>
                         <a href="#" class=""><img src="img/socials (1).svg" alt="иконка vk"></a> <a href="#" class=""><img src="img/socials (2).svg" alt="иконка youtube"></a></li>
-                    <li class="links__item"><a href="#" class="links__link">hello@tochkakontenta.ru</a></li>
-                    <li class="links__item"><a href="#" class="links__link">+7 909 151-08-70</a></li>
+                    <li class="footer-links__item"><a href="#" class="footer-links__link">hello@tochkakontenta.ru</a></li>
+                    <li class="footer-links__item"><a href="#" class="footer-links__link">+7 909 151-08-70</a></li>
+                    <li class="footer-links__item"><a href="/intro-to-layout-DOFONSON/laba7.html" target="_blank" class="footer-links__link--laba footer-links__link--laba">Ссылка на лабу №7</a></li>
                 </ul>
             </div>
             <div class="politics">
