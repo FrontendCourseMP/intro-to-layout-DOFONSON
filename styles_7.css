@@ -211,18 +211,18 @@ footer{
 
 .section_2{
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-column-start: sidebar;
-    grid-column-end: main;
+    grid-template:'aside main' auto / 200px 1fr;
 }
 
 
 
 aside{
+    grid-area: 'aside';
     background-color: aquamarine;
 }
 
 .section_2_right{
+    grid-area: 'main';
     display: grid;  
     grid-template-columns: repeat(6, 1fr);
     justify-content: space-between;
@@ -230,8 +230,12 @@ aside{
 }
 
 .section_2_row-1{
-    grid-column: span 6
+    grid-column: span 6;
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
+
 .section_2_row-2{
     grid-column: span 2;
 }
@@ -243,15 +247,15 @@ aside{
 
 .section_3 ul{
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .section_3 ul li{
+    text-align: center;
     margin-bottom: 50px;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .section_3 ul li img{
@@ -260,13 +264,9 @@ aside{
 }
 
 .section_3 ul li a{
-    margin-left: 35px;
     background-color: var(--main);
     grid-row: 1/1;
     grid-column: 1/1;
-    max-height: 33%;
-    max-width: 60%;
-    margin-top: 50px;
 }
 
 .section_3 a {

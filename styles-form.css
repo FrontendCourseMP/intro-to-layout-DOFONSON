@@ -6,6 +6,14 @@
     --line-color: rgba(52, 52, 78, 0.50);
   }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
 
 .main-form__fieldset{
     font-family: Inter, sans-serif;
