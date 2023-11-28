@@ -1,7 +1,7 @@
 @font-face {
     font-family: "steelfish";
-    src: url("/intro-to-layout-DOFONSON/intro-to-layout-DOFONSON/fonts/SteelfishBk-Regular.woff2") format("woff2"),
-    url("/intro-to-layout-DOFONSON/fonts/SteelfishBk-Regular.woff") format("woff");
+    src: url("fonts/SteelfishBk-Regular.woff2") format("woff2"),
+    url("fonts/SteelfishBk-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,15 +10,15 @@
 
 @font-face {
     font-family: 'steelfish-bold';
-    src: url('/intro-to-layout-DOFONSON/fonts/SteelfishEb-Regular.woff2') format('woff2');
+    src: url('fonts/SteelfishEb-Regular.woff2') format('woff2');
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
         font-family: "inter";
-        src: url("/intro-to-layout-DOFONSON/fonts/Inter-Regular.woff") format("woff"),
-        url('/intro-to-layout-DOFONSON/fonts/Inter-Bold.woff') format('woff');
+        src: url("fonts/Inter-Regular.woff") format("woff"),
+        url('Inter-Bold.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -153,10 +153,10 @@ footer{
 
 .section_1{
     background-color: #ECEEF8;
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 500px;
     display: grid;
-    grid-template-columns: 150px 150px 200px 200px 100px;
+    grid-template-columns: 93.75px 93.75px 125px 125px 62.5px;
     justify-content: center;
 }
 .section_1 div{
@@ -212,22 +212,11 @@ footer{
 .section_2{
     display: grid;
     grid-template-columns: 200px 1fr;
+    grid-column-start: sidebar;
+    grid-column-end: main;
 }
 
-.section_2 .section_2_row-1{
-    max-height: 1000px;
-    max-width: 100%;
-}
 
-.section_2 .section_2_row-2{
-    max-height: 1000px;
-    max-width: 85%;
-}
-
-.section_2 .section_2_row-3{
-    max-height: 1000px;
-    max-width: 85%;
-}
 
 aside{
     background-color: aquamarine;
@@ -246,27 +235,38 @@ aside{
 .section_2_row-2{
     grid-column: span 2;
 }
+
 .section_2_row-3{
     grid-column: span 3;
 }
 
+
 .section_3 ul{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 50vh);
-    align-items: center;
-    gap: 30px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
 }
-.section_3 li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    background: url('img/img_coffee.jpg')no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+.section_3 ul li{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.section_3 ul li img{
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+.section_3 ul li a{
+    margin-left: 35px;
+    background-color: var(--main);
+    grid-row: 1/1;
+    grid-column: 1/1;
+    max-height: 33%;
+    max-width: 60%;
+    margin-top: 50px;
 }
 
 .section_3 a {

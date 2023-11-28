@@ -577,12 +577,12 @@ header{
 }
 .section_7 ul img{
     position: absolute;
-    top: -16px;
+    top: 10px;
 }
 .section_7 li {
     margin-bottom: 10px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .section_7 p {
@@ -878,8 +878,15 @@ footer{
     .section_7 a {
         right: 5.8%;
     }
+    .section_7__h2-span{
+        margin-left: 100px;
+    }
+    .section_7-main{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: baseline;
+    }
 }
-
 @media (min-width: 1024px) {
     .section_7 a {
         right: 18.8%;
