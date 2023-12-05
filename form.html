@@ -13,7 +13,7 @@
 <body>
     <header class="main-header">
         <div class="wrapper">
-            <a href="#"><img src="img/logo.svg" alt="logo__logo"></a>
+            <a href="index.html"><img src="img/logo.svg" alt="logo__logo"></a>
             <a href="#" class="main-header__link link__adr"><img src="img/icon 04.svg" alt="adress_icon"><span class="main-header__link_span">8 минут от м. Тульская</span></a>
             <a href="#" class="main-header__link"> <img src="img/icon 01.svg" alt="logo__phone"> <span class="main-header__link_span">+7 909 151-08-70</span></a>
             <a href="form.html" target="_blank" class="main-header__link main-header__link--laba main-header__burger">Ссылка на лабу №8</a>
@@ -40,13 +40,13 @@
                     <legend class="main-form__legend fieldset-personal__legend">Личные данные</legend>
                     <ul class="main-form__list fieldset-personal__list">
                         <li class="list__string">
-                            <label for="name">
+                            <label for="name" class="fieldset-personal__label--required">
                                 Ваше имя (обязательное поле)
                                 <input type="text" id="name" required placeholder="Иван" class="main-form__input" name="name">
                             </label>
                         </li>
                         <li class="list__string">
-                            <label for="birthday">
+                            <label for="birthday" class="fieldset-personal__label--required">
                                 Дата рождения (обязательное поле)
                                 <input type="date" id="birthday" required placeholder="1.01.2000" class="main-form__input" name="birthday">
                             </label>
@@ -96,6 +96,80 @@
                 </fieldset>
                 <button type="submit" class="main-form__button main-form__button--submit">Отправить данные</button>
                 <button type="reset" class="main-form__button main-form__button--reset">Сбросить форму</button>
+            </form>
+            <form action="post" class="form main-form main-form--2">
+                <dl>
+                    <dt>Псевдоэлемент</dt>
+                    <dd> Элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).</dd>
+                    <dt>Псевдокласс</dt>
+                    <dd>Особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                </dl>
+                <fieldset class="main-form--2__fieldset">
+                    <legend>Псевдоэлементы</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::before" value="::before" checked>
+                            <label for="::before">::before</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::after" value="::after" checked>
+                            <label for="::after">::after</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::first-letter" value="::first-letter" checked>
+                            <label for="::first-letter">::first-letter</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::selection" value="::selection">
+                            <label for="::selection" aria-checked="true">::selection</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::first-line" value="::first-line">
+                            <label for="::first-line">::first-line</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::placeholder" value="::placeholder" checked>
+                            <label for="::placeholder">::placeholder</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::marker" value="::marker">
+                            <label for="::marker">::marker</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="main-form--2__fieldset">
+                    <legend>Псевдоклассы</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":active" value=":active" checked>
+                            <label for=":active">:active</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":hover" value=":hover" checked>
+                            <label for=":hover">:hover</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":focus" value=":focus" checked>
+                            <label for=":focus">:focus</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":checked" value=":checked" checked>
+                            <label for=":checked" aria-checked="true">:checked</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":not" value=":not">
+                            <label for=":not">:not</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":root" value=":root" checked>
+                            <label for=":root">:root</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":empty" value=":empty">
+                            <label for=":empty">:empty</label>
+                        </li>
+                    </ul>
+                </fieldset>
             </form>
         </div>
     </main>
