@@ -62,8 +62,20 @@ body{
 }
 
 header{
+    position: relative;
     font-size: 15px;
 }
+.skip-link{
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    text-decoration: none;
+    color: var(--main-text);
+    left: 100px;
+}
+.skip-link:focus {
+    opacity: 1;
+  }
 
 .main-header .wrapper {
     display: flex;
@@ -154,6 +166,10 @@ header{
 
 .main-header__image-span{
     position: relative;
+}
+
+.desctop_variant{
+    display: none;
 }
 
 .main-header__image-span ::before{
@@ -515,7 +531,7 @@ header{
     margin-bottom: 10px;
 }
 .details_active{
-    min-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -894,7 +910,20 @@ footer{
         width: 195px;
         height: 67px;
     }
-    
+    .desctop_variant{
+        display: block;
+        margin: 0 auto;
+    }
+    .section_1__main-p{
+        text-align: center;
+    }
+    .mobile_variant{
+        display: none;
+    }
+    .section_1__main-p span{
+        margin-left: 150px;
+        display: block;
+    }
     .sect_1-img_2{
         border-radius: 200px;
         object-fit: cover;
@@ -937,9 +966,6 @@ footer{
     form{
         position: relative;
     }
-    .section_5 details img{
-        max-width: 50px;
-    }
     .form .form__image{
         float: right;
         min-height: 100%;
@@ -967,6 +993,37 @@ footer{
         display: flex;
         justify-content: space-between;
         min-width: 100%;
+    }
+    .section_5 ul{
+        position: relative;
+    }
+    .section_5 summary{
+        max-width: 40%;
+        margin-right: 20px;
+    }
+    .section_5 details .details_active{
+        position: absolute;
+        max-width: 500px;
+        left: 50%;
+    }
+    .section_5 details .details_active-1{
+        top: -40px;
+    }
+    .section_5 details .details_active-2{
+        top: -40px;
+        height: 437.5px;
+    }
+    .section_5 details .details_active-3{
+        top: -40px;
+        height: 437.5px;
+    }
+    .section_5 details .details_active-4{
+        top: -40px;
+        height: 437.5px;
+    }
+    .section_5 details .details_active-5{
+        top: -40px;
+        height: 437.5px;
     }
 }
 

@@ -9,6 +9,8 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 main{
@@ -102,11 +104,11 @@ input::placeholder{
     height: 24px;
     top: -4px;
     left: -34px;
-    background: url('../img/radio-btns.svg') 0 0 no-repeat;
+    background: url('img/radio-btns.svg') 0 0 no-repeat;
 }
 
 .list__string--radio input[type=radio]:checked + label:before{
-    background: url('../img/radio-btns-ch.svg') 0 0 no-repeat;
+    background: url('img/radio-btns-ch.svg') 0 0 no-repeat;
 }
 
 
