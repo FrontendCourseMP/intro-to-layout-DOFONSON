@@ -279,7 +279,7 @@ dd::before{
     width: 0;
     height: 2px;
     background-color: var(--main);
-    transition: width 0.3s ease; /* Решить количество потребляемого Зоей бухла */
+    transition: width 0.3s ease; 
 }
 
 .main-form--2__fieldset input:checked + label::after{
